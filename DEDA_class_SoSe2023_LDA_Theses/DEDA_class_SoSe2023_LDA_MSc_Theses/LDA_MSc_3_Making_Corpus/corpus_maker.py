@@ -232,7 +232,7 @@ class CorpusMaker:
             pickle.dump(words, file)
         
         f = umap.plot.points(umap_embedding)
-        f.set_title('UMAP projection of {} unique words'.format(len(words)), fontsize = 24)
+        f.set_title('UMAP Projection of {} Unique Words'.format(len(words)), fontsize = 24)
         plt.savefig('UMAP terms.png', transparent = True, dpi = 300)
         plt.show()
         plt.close()
@@ -278,7 +278,7 @@ class CorpusMaker:
             pickle.dump(mapper, file)
         
         f = umap.plot.points(mapper)
-        f.set_title('UMAP projection of {} MSc theses'.format(len_docs), fontsize = 24)
+        f.set_title('UMAP Projection of {} MSc Theses'.format(len_docs), fontsize = 24)
         plt.savefig('UMAP theses.png', transparent = True, dpi = 300)
         plt.show()
         plt.close()
